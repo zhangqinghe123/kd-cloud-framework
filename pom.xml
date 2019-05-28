@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kedong.elecmarket</groupId>
+    <artifactId>kd-cloud-framework</artifactId>
+    <version>${kd.version}</version>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.12.RELEASE</version>
+        <relativePath /> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <spring-boot.version>1.5.12.RELEASE</spring-boot.version>
+        <spring-cloud.version>Edgware.SR3</spring-cloud.version>
+        <lombok.version>1.18.0</lombok.version>
+        <swagger2.version>2.9.2</swagger2.version>
+        <jjwt>0.7.0</jjwt>
+        <fastjson>1.2.30</fastjson>
+        <mysql.version>5.1.46</mysql.version>
+        <querydsl.version>4.2.1</querydsl.version>
+        <commons-lang3>3.5</commons-lang3>
+        <commons-io.version>2.5</commons-io.version>
+        <ttl.version>2.2.0</ttl.version>
+        <zuul-ratelimit>1.7.0.RELEASE</zuul-ratelimit>
+        <hutool-all>3.3.2</hutool-all>
+        <weixin.business.version>3.2.0</weixin.business.version>
+        <weixin.emoji.converter.version>0.1.1</weixin.emoji.converter.version>
+        <cloud-commons.version>1.0.7-SNAPSHOT</cloud-commons.version>
+        <kaptcha.version>0.0.9</kaptcha.version>
+        <shardingjdbc.version>2.0.3</shardingjdbc.version>
+        <hibernate.validator.version>5.3.6.Final</hibernate.validator.version>
+        <hibernate.core.version>5.0.12.Final</hibernate.core.version>
+        <spring-boot-admin-server.version>1.5.7</spring-boot-admin-server.version>
+        <spring-boot-admin-server-ui.version>1.5.7</spring-boot-admin-server-ui.version>
+        <spring-boot-admin-server-ui-turbine.version>1.5.7</spring-boot-admin-server-ui-turbine.version>
+        <zipkin-autoconfigure.version>2.8.4</zipkin-autoconfigure.version>
+        <kd.version>1.0.1</kd.version>
+        <kd.core.version>${kd.version}</kd.core.version>
+        <kd.business.version>${kd.version}</kd.business.version>
+        <kd.monitor.version>${kd.version}</kd.monitor.version>
+        <kd.system.version>${kd.version}</kd.system.version>
+        <kd.api.version>${kd.version}</kd.api.version>
+    </properties>
+
+
+</project>
