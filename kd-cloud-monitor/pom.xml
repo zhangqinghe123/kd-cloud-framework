@@ -9,11 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kd-cloud-system</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>kd-cloud-system-eureka</module>
-    </modules>
+    <artifactId>kd-cloud-monitor</artifactId>
 
 
 </project>
