@@ -3,15 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>kd-cloud-framework</artifactId>
-        <groupId>com.kedong.elecmarket</groupId>
+        <artifactId>kd-cloud-api</artifactId>
+        <groupId>com.kedong.elecmarket.api</groupId>
         <version>1.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>kd-cloud-core</artifactId>
-    <groupId>com.kedong.elecmarket.core</groupId>
-    <packaging>pom</packaging>
-    <version>${kd.core.version}</version>
-
-
+    <groupId>com.kedong.elecmarket.api.demo</groupId>
+    <artifactId>kd-cloud-api-demo</artifactId>
+    <version>1.0.1</version>
+    <packaging>jar</packaging>
+    <name>kd-cloud-api-demo</name>
+    <description>测试demo</description>
 </project>

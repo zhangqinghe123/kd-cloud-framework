@@ -227,6 +227,7 @@
         <module>kd-cloud-system</module>
         <module>kd-cloud-core</module>
         <module>kd-cloud-monitor</module>
+        <module>kd-cloud-api</module>
     </modules>
 
 </project>
