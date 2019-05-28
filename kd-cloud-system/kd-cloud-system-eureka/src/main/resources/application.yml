@@ -17,7 +17,7 @@ spring:
   profiles: dev
 security:
   basic:
-    enabled: true
+    enabled: false
   user:
     name: admin
     password: 123456
