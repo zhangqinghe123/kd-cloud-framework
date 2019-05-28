@@ -52,5 +52,10 @@
         <kd.api.version>${kd.version}</kd.api.version>
     </properties>
 
+    <modules>
+        <!-- 框架核心 -->
+        <module>kd-cloud-system</module>
+        <module>kd-cloud-core</module>
+    </modules>
 
 </project>
