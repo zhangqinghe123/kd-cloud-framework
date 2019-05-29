@@ -3,25 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>kd-cloud-api</artifactId>
-        <groupId>com.kedong.elecmarket.api</groupId>
+        <artifactId>kd-cloud-system</artifactId>
+        <groupId>com.kedong.elecmarket.system</groupId>
         <version>1.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>kd-cloud-api-demo</artifactId>
+    <artifactId>kd-cloud-system-ribbon</artifactId>
     <version>1.0.1</version>
     <packaging>jar</packaging>
-    <name>kd-cloud-api-demo</name>
-    <description>测试demo</description>
+    <name>kd-cloud-system-ribbon</name>
+    <description>ribbon模块</description>
+
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -35,15 +31,4 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <finalName>${project.name}</finalName>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

@@ -1,12 +1,22 @@
-package com.kedong.elecmarket.api.demo.domain;
+package com.kedong.elecmarket.core.bean.entity.user;
 
 /**
  * @author 张庆贺
- * @since 2019/5/28 15:51
+ * @since 2019/5/29 21:07
  */
 public class UserInfo {
-    private String name = "zhangqinghe";
-    private String company = "kedong";
+
+    private Integer userId;
+    private String name = "张庆贺";
+    private String company = "科东";
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
 
     public String getName() {
         return name;

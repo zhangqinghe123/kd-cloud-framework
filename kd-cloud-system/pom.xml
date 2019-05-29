@@ -18,6 +18,7 @@
 
     <modules>
         <module>kd-cloud-system-eureka</module>
+        <module>kd-cloud-system-ribbon</module>
     </modules>
 
     <dependencies>

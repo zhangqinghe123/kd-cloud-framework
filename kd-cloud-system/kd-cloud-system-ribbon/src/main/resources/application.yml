@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 1002
 
 spring:
   application:
-    name: kd-cloud-api-demo
+    name: system-ribbon
   profiles:
       active: dev
 eureka:

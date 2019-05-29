@@ -10,6 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>kd-cloud-monitor</artifactId>
-
+    <groupId>com.kedong.elecmarket.monitor</groupId>
 
 </project>

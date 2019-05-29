@@ -19,7 +19,7 @@ security:
   basic:
     enabled: true
   user:
-    name: KeDong
+    name: kedong
     password: 123456
 eureka:
   server:
