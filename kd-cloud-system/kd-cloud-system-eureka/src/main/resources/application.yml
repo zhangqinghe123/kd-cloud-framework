@@ -17,9 +17,9 @@ spring:
   profiles: dev
 security:
   basic:
-    enabled: false
+    enabled: true
   user:
-    name: admin
+    name: KeDong
     password: 123456
 eureka:
   server:
