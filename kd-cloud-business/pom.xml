@@ -3,31 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>kd-cloud-system</artifactId>
-        <groupId>com.kedong.elecmarket.system</groupId>
+        <artifactId>kd-cloud-framework</artifactId>
+        <groupId>com.kedong.elecmarket</groupId>
         <version>1.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>kd-cloud-system-ribbon</artifactId>
+
+    <groupId>com.kedong.elecmarket.business</groupId>
+    <artifactId>kd-cloud-business</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.1</version>
-    <packaging>jar</packaging>
-    <name>kd-cloud-system-ribbon</name>
-    <description>ribbon模块</description>
+    <modules>
+        <module>kd-cloud-business-demo</module>
+    </modules>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kedong.elecmarket.core</groupId>
-            <artifactId>kd-cloud-core-bean</artifactId>
-            <version>1.0.1</version>
-            <scope>compile</scope>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
     </dependencies>
 

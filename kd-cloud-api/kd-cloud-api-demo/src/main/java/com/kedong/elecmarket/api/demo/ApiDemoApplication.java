@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @author 张庆贺
@@ -12,13 +15,19 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class DemoApplication extends SpringBootServletInitializer {
+public class ApiDemoApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(DemoApplication.class);
+        return application.sources(ApiDemoApplication.class);
+    }
+
+    @Bean
+    @LoadBalanced
+    public RestTemplate restTemplate(){
+        return new RestTemplate();
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(ApiDemoApplication.class, args);
     }
 }

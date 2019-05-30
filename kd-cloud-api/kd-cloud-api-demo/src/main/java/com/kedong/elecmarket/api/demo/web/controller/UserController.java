@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @author 张庆贺
@@ -18,11 +19,15 @@ public class UserController {
 
     private Logger logger = LoggerFactory.getLogger(UserController.class);
 
+    private final RestTemplate restTemplate;
+
+    public UserController(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
     @GetMapping("/info/{userId}")
     public UserInfo user(@PathVariable Integer userId) {
-        logger.info("get user info");
-        UserInfo userInfo = new UserInfo();
-        userInfo.setUserId(userId);
-        return userInfo;
+        logger.info("ribbon get user info");
+        return this.restTemplate.getForObject("http://kd-cloud-business-demo/user/info/" + userId, UserInfo.class);
     }
 }
