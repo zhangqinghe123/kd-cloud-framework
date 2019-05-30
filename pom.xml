@@ -153,23 +153,6 @@
                 <version>1.16</version>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>${hibernate.validator.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-core</artifactId>
-                <version>${hibernate.core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-entitymanager</artifactId>
-                <version>${hibernate.core.version}</version>
-            </dependency>
-
             <!-- commons -->
             <dependency>
                 <groupId>commons-io</groupId>
@@ -181,12 +164,6 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.xiaoleilu</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>${hutool-all}</version>
             </dependency>
 
             <!-- querydsl -->
@@ -221,11 +198,6 @@
             </dependency>
 
             <dependency>
-                <groupId>com.kedong.elecmarket.core</groupId>
-                <artifactId>kd-cloud-core-bean</artifactId>
-            </dependency>
-
-            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
@@ -235,7 +207,6 @@
     </dependencyManagement>
 
     <modules>
-        <!-- 框架核心 -->
         <module>kd-cloud-system</module>
         <module>kd-cloud-core</module>
         <module>kd-cloud-monitor</module>
