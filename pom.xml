@@ -8,10 +8,10 @@
     <artifactId>kd-cloud-framework</artifactId>
     <version>1.0.1</version>
     <packaging>pom</packaging>
-    <name>kedong electric market cloud framework</name>
+    <name>kedong cloud framework</name>
     <url>https://github.com/zhangqinghe123/kd-cloud-framework</url>
     <description>
-        科东电力市场云框架
+        spring cloud 框架
     </description>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -37,17 +37,26 @@
         <ttl.version>2.2.0</ttl.version>
         <zuul-ratelimit>1.7.0.RELEASE</zuul-ratelimit>
         <hutool-all>3.3.2</hutool-all>
+        <weixin.business.version>3.2.0</weixin.business.version>
+        <weixin.emoji.converter.version>0.1.1</weixin.emoji.converter.version>
         <cloud-commons.version>1.0.7-SNAPSHOT</cloud-commons.version>
         <kaptcha.version>0.0.9</kaptcha.version>
         <shardingjdbc.version>2.0.3</shardingjdbc.version>
+        <hibernate.validator.version>5.3.6.Final</hibernate.validator.version>
+        <hibernate.core.version>5.0.12.Final</hibernate.core.version>
         <spring-boot-admin-server.version>1.5.7</spring-boot-admin-server.version>
         <spring-boot-admin-server-ui.version>1.5.7</spring-boot-admin-server-ui.version>
         <spring-boot-admin-server-ui-turbine.version>1.5.7</spring-boot-admin-server-ui-turbine.version>
         <zipkin-autoconfigure.version>2.8.4</zipkin-autoconfigure.version>
-        <eureka.version>1.4.4.RELEASE</eureka.version>
-        <ribbon.version>1.4.4.RELEASE</ribbon.version>
+        <kd.version>1.0.1</kd.version>
+        <kd.core.version>${kd.version}</kd.core.version>
+        <kd.business.version>${kd.version}</kd.business.version>
+        <kd.monitor.version>${kd.version}</kd.monitor.version>
+        <kd.system.version>${kd.version}</kd.system.version>
+        <kd.api.version>${kd.version}</kd.api.version>
     </properties>
 
+    <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.spring.platform</groupId>
@@ -144,6 +153,23 @@
                 <version>1.16</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>${hibernate.core.version}</version>
+            </dependency>
+
             <!-- commons -->
             <dependency>
                 <groupId>commons-io</groupId>
@@ -155,6 +181,12 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xiaoleilu</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all}</version>
             </dependency>
 
             <!-- querydsl -->
@@ -187,61 +219,28 @@
                 <artifactId>spring-cloud-zuul-ratelimit</artifactId>
                 <version>${zuul-ratelimit}</version>
             </dependency>
-            <!-- eureka -->
+
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-eureka</artifactId>
-                <version>${eureka.version}</version>
+                <groupId>com.kedong.elecmarket.core</groupId>
+                <artifactId>kd-cloud-core-bean</artifactId>
             </dependency>
-            <!-- ribbon -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-ribbon</artifactId>
-                <version>${ribbon.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
             </dependency>
+
         </dependencies>
+    </dependencyManagement>
 
     <modules>
+        <!-- 框架核心 -->
         <module>kd-cloud-system</module>
         <module>kd-cloud-core</module>
         <module>kd-cloud-monitor</module>
         <module>kd-cloud-api</module>
         <module>kd-cloud-business</module>
     </modules>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${spring-boot.version}</version>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <target>${java.version}</target>
-                        <source>${java.version}</source>
-                        <encoding>UTF-8</encoding>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <configuration>
-                        <autoVersionSubmodules>true</autoVersionSubmodules>
-                        <useReleaseProfile>false</useReleaseProfile>
-                        <releaseProfiles>release</releaseProfiles>
-                        <goals>deploy</goals>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
 
 </project>

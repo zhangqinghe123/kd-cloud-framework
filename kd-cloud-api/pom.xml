@@ -12,16 +12,22 @@
     <groupId>com.kedong.elecmarket.api</groupId>
     <packaging>pom</packaging>
     <version>1.0.1</version>
+
     <name>kd-cloud-api</name>
     <description>能力提供模块</description>
+
     <modules>
         <module>kd-cloud-api-demo</module>
     </modules>
+
     <dependencies>
         <dependency>
-            <groupId>com.kedong.elecmarket.core</groupId>
-            <artifactId>kd-cloud-core-bean</artifactId>
-            <version>1.0.1</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
     </dependencies>
 

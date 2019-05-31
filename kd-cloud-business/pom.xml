@@ -16,12 +16,16 @@
     <modules>
         <module>kd-cloud-business-demo</module>
     </modules>
+
     <dependencies>
         <dependency>
-            <groupId>com.kedong.elecmarket.core</groupId>
-            <artifactId>kd-cloud-core-bean</artifactId>
-            <version>1.0.1</version>
-            <scope>compile</scope>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
     </dependencies>
+
 </project>

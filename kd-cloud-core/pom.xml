@@ -11,10 +11,11 @@
     <artifactId>kd-cloud-core</artifactId>
     <modules>
         <module>kd-cloud-core-bean</module>
+        <module>kd-cloud-core-bean</module>
     </modules>
     <groupId>com.kedong.elecmarket.core</groupId>
     <packaging>pom</packaging>
-    <version>1.0.1</version>
+    <version>${kd.core.version}</version>
 
 
 </project>
