@@ -10,26 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>kd-cloud-api-demo</artifactId>
     <version>1.0.1</version>
-    <dependencies>
-        <dependency>
-            <groupId>com.kedong.elecmarket.core</groupId>
-            <artifactId>kd-cloud-core-bean</artifactId>
-            <version>1.0.1</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
     <packaging>jar</packaging>
     <name>kd-cloud-api-demo</name>
     <description>测试demo</description>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <finalName>${project.name}</finalName>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

@@ -5,16 +5,16 @@ package com.kedong.elecmarket.core.bean.entity.user;
  * @since 2019/5/29 22:30
  */
 public class UserInfo {
-    private Integer userId;
+    private Integer id;
     private String name = "张庆贺";
     private String company = "科东";
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {

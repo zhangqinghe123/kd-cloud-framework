@@ -14,7 +14,7 @@
     </modules>
     <groupId>com.kedong.elecmarket.core</groupId>
     <packaging>pom</packaging>
-    <version>${kd.core.version}</version>
+    <version>1.0.1</version>
 
 
 </project>
