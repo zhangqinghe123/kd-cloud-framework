@@ -33,6 +33,7 @@ public class UserFeignClientController {
     @GetMapping("/getUserInfoById/{userId}")
     public DemoUserInfo getUserInfoById(@PathVariable Integer userId) {
         logger.info("get user info");
+        // http://localhost:8080/demoFeignUser/getUserInfoById/1234562323
         return this.kdCloudBusinessDemoClient.getUserInfoById(userId);
     }
 }
