@@ -5,6 +5,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,9 +24,11 @@ public class UserRestTemplateController {
     private Logger logger = LoggerFactory.getLogger(UserRestTemplateController.class);
 
     private final RestTemplate restTemplate;
+    private final LoadBalancerClient loadBalancerClient;
 
-    public UserRestTemplateController(RestTemplate restTemplate) {
+    public UserRestTemplateController(RestTemplate restTemplate, LoadBalancerClient loadBalancerClient) {
         this.restTemplate = restTemplate;
+        this.loadBalancerClient = loadBalancerClient;
     }
 
     @ApiOperation(value = "详细信息查询", notes = "用于客户端查询用户详细信息", httpMethod = "GET")
