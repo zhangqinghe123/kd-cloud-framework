@@ -17,6 +17,11 @@
         <module>kd-cloud-business-demo</module>
     </modules>
 
+    <properties>
+        <mybatis-spring-boot>1.2.0</mybatis-spring-boot>
+        <mysql-connector>5.1.39</mysql-connector>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -31,6 +36,23 @@
             <artifactId>kd-cloud-core-bean</artifactId>
             <version>1.0.1</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.kedong.elecmarket.core.common</groupId>
+            <artifactId>kd-cloud-core-common</artifactId>
+            <version>1.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis-spring-boot}</version>
+        </dependency>
+        <!-- MySQL 连接驱动依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector}</version>
         </dependency>
     </dependencies>
 

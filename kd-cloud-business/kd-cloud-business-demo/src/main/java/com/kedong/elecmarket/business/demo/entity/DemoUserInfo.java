@@ -1,4 +1,4 @@
-package com.kedong.elecmarket.core.bean.entity.user;
+package com.kedong.elecmarket.business.demo.entity;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

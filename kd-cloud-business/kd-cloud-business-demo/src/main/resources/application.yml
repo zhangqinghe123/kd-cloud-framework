@@ -6,6 +6,15 @@ spring:
     name: kd-cloud-business-demo
   profiles:
       active: dev
+  datasource:
+       url: jdbc:mysql://127.0.0.1:3306/kd-cloud-user?useUnicode=true&characterEncoding=utf8
+       username: root
+       password: root
+       driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.kedong.elecmarket.business.demo.entity  # 注意：对应实体类的路径
+
 eureka:
   instance:
     prefer-ip-address: true
@@ -14,6 +23,16 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://kedong:123456@localhost:1001/eureka
+mapper:
+    mappers: com.common.dao
+    not-empty: false
+    identity: MYSQL
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
 
 ---
 spring:

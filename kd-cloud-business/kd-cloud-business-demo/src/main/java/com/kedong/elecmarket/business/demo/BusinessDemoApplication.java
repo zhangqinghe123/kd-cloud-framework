@@ -1,13 +1,12 @@
 package com.kedong.elecmarket.business.demo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
+
 
 /**
  * @author 张庆贺
@@ -15,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
+@MapperScan("com.kedong.elecmarket.business.demo.mapper")
 public class BusinessDemoApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {

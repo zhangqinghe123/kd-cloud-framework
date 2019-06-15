@@ -8,20 +8,25 @@
         <version>1.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>kd-cloud-core-bean</artifactId>
+
+    <groupId>com.kedong.elecmarket.core.common</groupId>
+    <artifactId>kd-cloud-core-common</artifactId>
     <version>1.0.1</version>
 
     <dependencies>
         <dependency>
             <groupId>tk.mybatis</groupId>
-            <artifactId>mapper</artifactId>
-            <version>4.0.3</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/tk.mybatis/mapper-spring-boot-starter -->
-        <dependency>
-            <groupId>tk.mybatis</groupId>
             <artifactId>mapper-spring-boot-starter</artifactId>
             <version>2.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>4.0.3</version>
         </dependency>
     </dependencies>
 

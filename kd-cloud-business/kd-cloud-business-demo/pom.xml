@@ -12,4 +12,12 @@
     <groupId>com.kedong.elecmarket.business.demo</groupId>
     <artifactId>kd-cloud-business-demo</artifactId>
     <version>1.0.1</version>
+    <dependencies>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-base</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>
