@@ -1,7 +1,7 @@
 package com.kedong.elecmarket.business.demo.mapper;
 
 
-import com.kedong.elecmarket.business.demo.entity.DemoUserInfo;
+import com.kedong.elecmarket.core.bean.entity.user.DemoUserInfo;
 
 import java.util.List;
 

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.kedong.elecmarket.business.demo.mapper.UserInfoMapper">
-    <resultMap id="BaseResultMap" type="com.kedong.elecmarket.business.demo.entity.DemoUserInfo">
+    <resultMap id="BaseResultMap" type="com.kedong.elecmarket.core.bean.entity.user.DemoUserInfo">
         <result column="user_id" property="userId" />
         <result column="name" property="name" />
         <result column="company" property="company" />
     </resultMap>
 
-    <parameterMap id="User" type="com.kedong.elecmarket.business.demo.entity.DemoUserInfo"/>
+    <parameterMap id="User" type="com.kedong.elecmarket.core.bean.entity.user.DemoUserInfo"/>
 
     <sql id="Base_Column_List">
         user_id, name, company
     </sql>
-    <select id="findAllUser" resultType="com.kedong.elecmarket.business.demo.entity.DemoUserInfo" >
+    <select id="findAllUser" resultType="com.kedong.elecmarket.core.bean.entity.user.DemoUserInfo" >
         select
         user_id, name, company
         from t_user_info

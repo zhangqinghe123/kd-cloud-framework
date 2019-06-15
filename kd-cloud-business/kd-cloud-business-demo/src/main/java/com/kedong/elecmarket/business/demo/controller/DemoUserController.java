@@ -1,7 +1,7 @@
 package com.kedong.elecmarket.business.demo.controller;
 
-import com.kedong.elecmarket.business.demo.entity.DemoUserInfo;
 import com.kedong.elecmarket.business.demo.mapper.UserInfoMapper;
+import com.kedong.elecmarket.core.bean.entity.user.DemoUserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
