@@ -23,7 +23,7 @@ public class DemoUserController {
 
 
     @GetMapping("/getUserInfoById/{userId}")
-    public List<DemoUserInfo> getUserInfoById(@PathVariable Integer userId) {
-        return userInfoMapper.findAllUser();
+    public DemoUserInfo getUserInfoById(@PathVariable Integer userId) {
+        return userInfoMapper.selectByPrimaryKey(userId);
     }
 }
