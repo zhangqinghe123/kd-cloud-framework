@@ -17,5 +17,4 @@
     <packaging>pom</packaging>
     <version>${kd.core.version}</version>
 
-
 </project>

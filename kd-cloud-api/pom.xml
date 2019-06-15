@@ -32,7 +32,6 @@
         <dependency>
             <groupId>com.kedong.elecmarket.core</groupId>
             <artifactId>kd-cloud-core-bean</artifactId>
-            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
@@ -53,6 +52,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-netflix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-base</artifactId>
         </dependency>
     </dependencies>
 

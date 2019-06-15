@@ -1,9 +1,6 @@
 package com.kedong.elecmarket.core.bean.entity.user;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * @author 张庆贺
@@ -13,6 +10,7 @@ import javax.persistence.Table;
 public class DemoUserInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "JDBC")
+    @Column(name = "user_id")
     private Integer userId;
     private String name = "张庆贺";
     private String company = "科东";
