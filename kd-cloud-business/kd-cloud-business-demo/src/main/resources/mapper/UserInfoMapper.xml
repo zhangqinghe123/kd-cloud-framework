@@ -12,9 +12,9 @@
     <sql id="Base_Column_List">
         user_id, name, company
     </sql>
-    <select id="findAllUser" resultType="com.kedong.elecmarket.core.bean.entity.user.DemoUserInfo" >
+    <select id="findAllUser" resultMap="BaseResultMap" >
         select
-        user_id, name, company
+        <include refid="Base_Column_List"/>
         from t_user_info
     </select>
 
