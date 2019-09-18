@@ -22,7 +22,7 @@ eureka:
     lease-expiration-duration-in-seconds: 10
   client:
     serviceUrl:
-      defaultZone: http://kedong:123456@localhost:1001/eureka
+      defaultZone: http://localhost:1001/eureka
 mapper:
     mappers: com.common.dao
     not-empty: false
