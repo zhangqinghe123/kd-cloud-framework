@@ -31,7 +31,7 @@
         <fastjson>1.2.30</fastjson>
         <mysql.version>5.1.46</mysql.version>
         <commons-lang3>3.5</commons-lang3>
-        <commons-io.version>2.5</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <ttl.version>2.2.0</ttl.version>
         <zuul-ratelimit>1.7.0.RELEASE</zuul-ratelimit>
         <shardingjdbc.version>2.0.3</shardingjdbc.version>
